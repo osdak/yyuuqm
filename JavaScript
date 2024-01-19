@@ -1,0 +1,15 @@
+function addBookmark(name, url) {
+  // 将书签保存到本地存储
+  localStorage.setItem(name, url);
+
+  // 显示成功消息
+  alert("书签添加成功");
+}
+
+function deleteBookmark(name) {
+  // 从本地存储中删除书签
+  localStorage.removeItem(name);
+
+  // 显示成功消息
+  alert("书签删除成功");
+}
